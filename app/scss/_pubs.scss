@@ -1,0 +1,118 @@
+.pubs {
+    background-color: $bg-color;
+    padding-top: 30px;
+
+    &__container {
+        background-color: $bg-color;
+    }
+
+    &__head {
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        @include flex-column-center;
+        gap: 30px;
+
+        @include viewport-md {
+            flex-direction: row;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+    }
+
+    // HEAD
+    
+    &__link {
+        @include base-link-arrow;
+    }
+
+    &__title {
+        @include subtitle;
+		@include main-gradient-text;
+        font-size: 38px;
+        line-height: 48px;
+        margin-top: 5px;
+    }
+
+    // BOX
+
+    &__item {
+        background-color: $basic-white;
+        border-radius: $radius-sm $radius-sm 0px 0px;
+        overflow: hidden;
+    }
+
+    &__item:nth-child(1) {
+        @include viewport-md {
+            flex: 1 1 45%;
+        }
+        @include viewport-lg {
+            flex: 1 1 30%;
+        }
+    }
+
+    &__item:nth-child(2) {
+        @include viewport-md {
+            flex: 1 1 45%;
+        }
+        @include viewport-lg {
+            flex: 1 1 30%;
+        }
+    }
+
+    &__item:nth-child(3) {
+        @include viewport-md {
+            flex: 1 1 100%;
+        }
+        @include viewport-lg {
+            flex: 1 1 30%;
+        }
+        
+    }
+    
+    // ITEM
+
+    &__image {
+        display: block;
+        line-height: 10px;
+
+        img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        padding: 30px;
+    }
+
+    // CONTENT
+
+    &__subtitle {
+        @include base-link;
+    }
+
+    &__date {
+        color: $text-color;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__separator {
+        border-top: 4px solid $separator-color;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 14px;;
+    }
+}

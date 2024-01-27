@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="you legal solutions provider">
+	<title>Title</title>
+	<!-- <link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/> -->
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<style>
+
+	body {
+		padding: 100px;
+	}
+
+	.popup {
+        background-color: rgba(0,0,0,0) !important;
+	}
+
+	.popup-content {
+		background-color: #F5F5FA !important;
+		box-shadow: 0px 15px 80px 0px rgba(40, 40, 86, 0.50) !important;
+		border-radius: 12px !important;
+		width: 650px !important;
+		padding: 30px !important;
+	}
+
+	.popup-header {
+		margin-bottom: 30px !important;
+		display: flex !important;
+		flex-direction: row !important;
+		justify-content: space-between !important;
+		align-items: flex-start !important;
+
+		text-align: left !important;
+	}
+
+	.popup-title {
+		margin: 0 !important;
+
+		font-family: Montserrat !important;
+		font-size: 38px !important;
+		font-weight: 700 !important;
+
+		background: linear-gradient(90deg, #f0145a, #ef8080) !important;
+		color: transparent !important;
+		background-clip: text !important;
+	}
+
+	.popup-close {
+		height: 32px !important;
+		width: 32px !important;
+		position: static !important;
+		border-radius: 8px !important;
+
+		font-size: 32px !important;
+		text-align: center !important;
+		line-height: 26px !important;
+		color: #EC6F5D !important;
+	}
+
+	.popup-close:hover {
+		background-color: #E6E6F0 !important;
+	}
+	
+	.popup-body {
+		margin: 0 !important;
+		text-align: left !important;
+	}
+
+	.popup-body p {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.contact-form__input, .contact-form__textarea, .contact-form__button {
+		display: block !important;
+		padding: 15px !important;
+		width: 100% !important;
+	}
+
+	.contact-form__input, .contact-form__textarea {
+		border-radius: 8px !important;
+		border: 1px solid #FFF !important;
+		background: #FFF !important;
+
+		color:#000 !important;
+		font-family: Montserrat !important;
+		font-size: 16px !important;
+
+		margin-bottom: 15px !important;
+	}
+
+	.contact-form__p, .contact-form__button {
+		margin-top: 30px !important;
+	}
+
+	.contact-form__p {
+		margin-bottom: 15px !important;
+
+		color: #B3B3BA !important;
+		font-family: Montserrat !important;
+		font-size: 14px !important;
+		font-weight: 700 !important;
+		letter-spacing: 1px !important;
+		text-transform: uppercase !important;
+	}
+
+	.contact-form__input::placeholder, .contact-form__textarea::placeholder {
+		color: #B3B3BA !important;
+		font-family: Montserrat !important;
+		font-size: 16px !important;
+		font-weight: 400 !important;
+	}
+
+	.contact-form__input:focus, .contact-form__textarea:focus {
+		outline: 1px solid #24A3FF !important;
+	}
+
+	.contact-form__textarea {
+		resize: none !important;
+		height: 150px !important;
+	}
+	
+	.contact-form__button {
+		color: #FFF !important;
+		text-align: center !important;
+		font-family: Montserrat !important;
+		font-size: 16px !important;
+		font-weight: 700 !important;
+
+		border-radius: 12px !important;
+        background: #24A3FF !important;
+        box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50) !important;
+	}
+
+	.contact-form__button:active {
+		background: #006CCF !important;
+	}
+
+	.contact-form__button:hover {
+		background: #0085FF !important;
+	}
+
+</style>
+
+<body>
+
+	<div class="popup-content">
+		<div class="popup-header">
+			<div class="popup-title">We would like to help you</div>
+			<div class="popup-close">x</div>
+		</div>
+		<div class="popup-body">
+			<form class="contact-form">
+			     <input class="contact-form__input" type="text" name="name" placeholder="Name">
+			     <textarea class="contact-form__textarea" name="message" maxlength="340" placeholder="Message"></textarea>
+			     <p class="contact-form__p">How to answer you?</p>
+			     <input class="contact-form__input" type="text" name="phone" placeholder="Phone number">
+			     <input class="contact-form__input" type="text" name="email" placeholder="Email">
+			     <button class="contact-form__button">Send message</button>
+		    </form>
+		</div>
+	</div>
+
+<!-- 
+<form class="contact-form"><input class="contact-form__input" type="text" name="name" placeholder="Name"><textarea class="contact-form__textarea" name="message" maxlength="340" placeholder="Message"></textarea><p class="contact-form__p">How to answer you?</p><input class="contact-form__input" type="text" name="phone" placeholder="Phone number"><input class="contact-form__input" type="text" name="email" placeholder="Email"><button class="contact-form__button">Send message</button></form>
+
+-->
+
+	<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

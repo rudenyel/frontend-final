@@ -51,6 +51,7 @@
 const formPopup = new Popup({
 	id: "contact-form",
 	title: "We would like to help you",
+	widthMultiplier: 0.844,
 	content: `<form class="contact-form"><input class="contact-form__input" type="text" name="name" placeholder="Name"><textarea class="contact-form__textarea" name="message" maxlength="340" placeholder="Message"></textarea><p class="contact-form__p">How to answer you?</p><input class="contact-form__input" type="text" name="phone" placeholder="Phone number"><input class="contact-form__input" type="text" name="email" placeholder="Email"><button class="contact-form__button">Send message</button></form>`,
 	css: `
 
